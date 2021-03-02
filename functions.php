@@ -1,5 +1,18 @@
 <?php
 
+function fictional_university_setup() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'fictional_university_setup' );
+
+
+
+
+
+
+
+
+
 function university_files() {
 
     wp_enqueue_script( 'main-university-js', get_theme_file_uri( '/js/scripts-bundled.js'), NULL, '1.0', true );
